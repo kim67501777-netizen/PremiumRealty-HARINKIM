@@ -24,8 +24,8 @@ index.html
 
   <div class="max-container shadow-2xl relative">
 
-    <!-- ================= 1. 메인 히어로 섹션 (조감도 배경 + 텍스트 배치) ================= -->
-    <section class="relative w-full h-[650px] lg:h-[850px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582281227227-2c4be0f43419?auto=format&fit=crop&w=1200&q=80');">
+    <!-- ================= 1. 메인 히어로 섹션 (내 컴퓨터의 main_view.jpg 연동) ================= -->
+    <section class="relative w-full h-[650px] lg:h-[850px] bg-cover bg-center" style="background-image: url('main_view.jpg');">
       <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80"></div>
 
       <!-- 네비게이션 헤더 -->
@@ -64,7 +64,6 @@ index.html
       </div>
     </section>
 
-
     <!-- ================= 2. 브랜드 프리미엄 섹션 ================= -->
     <section class="bg-navy-dark text-white p-8 lg:p-16 border-b border-white/5">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -82,8 +81,7 @@ index.html
       </div>
     </section>
 
-
-    <!-- ================= 3. 더블역세권의 가치 섹션 ================= -->
+    <!-- ================= 3. 더블역세권의 가치 섹션 (subway.jpg 연동) ================= -->
     <section class="p-8 lg:p-16 bg-white grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
       <div class="lg:col-span-4 space-y-4">
         <span class="text-xs text-amber-600 font-bold tracking-widest block">PREMIUM LOCATION</span>
@@ -97,8 +95,7 @@ index.html
         </div>
       </div>
       <div class="lg:col-span-5">
-        <!-- 원본 전단지 배치처럼 중간에 지하철 실물 이미지 느낌 구현 -->
-        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" class="w-full h-[300px] object-cover rounded-xl shadow-md border" alt="지하철">
+        <img src="subway.jpg" class="w-full h-[300px] object-cover rounded-xl shadow-md border" alt="교통안내지도">
       </div>
       <div class="lg:col-span-3 space-y-3">
         <div class="p-4 bg-lime-50 border-l-4 border-lime-600 rounded-r"><h4 class="text-xs font-bold text-slate-800">7호선 부천종합운동장역</h4><p class="text-[11px] text-gray-600 mt-0.5">도보 약 7분</p></div>
@@ -107,9 +104,8 @@ index.html
       </div>
     </section>
 
-
     <!-- ================= 4. 공원형 단지 건폐율 18% 섹션 ================= -->
-    <section class="relative w-full h-[380px] bg-cover bg-center text-white p-8 lg:p-16 flex items-center" style="background-image: url('https://images.unsplash.com/photo-1582281227227-2c4be0f43419?auto=format&fit=crop&w=1200&q=80');">
+    <section class="relative w-full h-[380px] bg-cover bg-center text-white p-8 lg:p-16 flex items-center" style="background-image: url('main_view.jpg');">
       <div class="absolute inset-0 bg-black/60"></div>
       <div class="relative z-10 max-w-md space-y-4">
         <span class="text-xs text-gold font-bold tracking-widest block">PARK LIFE</span>
@@ -123,18 +119,15 @@ index.html
       </div>
     </section>
 
-
-    <!-- ================= 5. ★★★ C2 HOUSE 아이소 및 인테리어 연동 섹션 ★Target★★★ ================= -->
+    <!-- ================= 5. C2 HOUSE 아이소 및 인테리어 연동 섹션 (실제 파일 연동) ================= -->
     <section class="p-8 lg:p-16 bg-white border-b border-gray-200">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
-        <!-- 좌측 설명 및 아이소 평형 선택 버튼 박스 -->
         <div class="lg:col-span-4 space-y-4">
           <span class="text-xs text-amber-600 font-bold tracking-widest block">PARK LIFE</span>
           <h2 class="text-3xl font-black text-slate-900 tracking-tight">라이프스타일을 완성하는<br>C2 HOUSE</h2>
           <p class="text-sm text-gray-500 leading-relaxed">공간, 수납, 동선까지 일상의 편리함을 더한 차별화된 입체 설계</p>
           
-          <!-- 원본과 동일하게 제작된 입체 아이소메트릭 평면 선택기 -->
           <div class="space-y-2 pt-2">
             <p class="text-xs font-bold text-gray-400">평형별 입체 평면도(아이소) 선택</p>
             <div class="grid grid-cols-3 gap-2">
@@ -149,28 +142,23 @@ index.html
           </button>
         </div>
 
-        <!-- 우측: 선택된 평형의 아이소 도면 및 내부 룸 전경 슬라이드 연동 영역 (크기 대폭 확대) -->
         <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-12 gap-4">
           
-          <!-- [실시간 변경되는 입체 도면 박스] -->
           <div class="md:col-span-5 bg-slate-900 rounded-xl p-4 flex flex-col justify-between text-white min-h-[300px] shadow-inner relative overflow-hidden">
             <span class="absolute top-3 left-3 bg-orange-600 text-[10px] font-bold px-2 py-0.5 rounded">3D ISOMETRIC</span>
             <div class="flex-grow flex items-center justify-center pt-4">
-              <!-- 59A SVG 도면 -->
               <svg id="svg-59" viewBox="0 0 120 100" class="w-full h-auto max-w-[180px]">
                 <polygon points="20,50 60,30 100,50 60,70" fill="#2d3748" stroke="#d5b377" stroke-width="1"/>
                 <polygon points="20,50 60,70 60,85 20,65" fill="#1a202c" stroke="#d5b377" stroke-width="1"/>
                 <polygon points="100,50 60,70 60,85 100,65" fill="#4a5568" stroke="#d5b377" stroke-width="1"/>
                 <text x="60" y="55" fill="#fff" font-size="7" font-weight="bold" text-anchor="middle">59A 입체도면</text>
               </svg>
-              <!-- 74A SVG 도면 (Hidden) -->
               <svg id="svg-74" viewBox="0 0 120 100" class="w-full h-auto max-w-[180px] hidden">
                 <polygon points="15,50 60,25 105,50 60,75" fill="#2d3748" stroke="#a0aec0" stroke-width="1"/>
                 <polygon points="15,50 60,75 60,90 15,65" fill="#1a202c" stroke="#a0aec0" stroke-width="1"/>
                 <polygon points="105,50 60,75 60,90 105,65" fill="#4a5568" stroke="#a0aec0" stroke-width="1"/>
                 <text x="60" y="55" fill="#fff" font-size="7" font-weight="bold" text-anchor="middle">74A 입체도면</text>
               </svg>
-              <!-- 84A SVG 도면 (Hidden) -->
               <svg id="svg-84" viewBox="0 0 120 100" class="w-full h-auto max-w-[180px] hidden">
                 <polygon points="10,50 60,20 110,50 60,80" fill="#2d3748" stroke="#f6ad55" stroke-width="1"/>
                 <polygon points="10,50 60,80 60,95 10,65" fill="#1a202c" stroke="#f6ad55" stroke-width="1"/>
@@ -184,9 +172,9 @@ index.html
             </div>
           </div>
 
-          <!-- [실시간 연동 인테리어 사진 대형 뷰어] -->
-          <div class="md:col-span-7 relative rounded-xl overflow-hidden shadow-lg group min-h-[300px]">
-            <img id="c2-img" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover absolute inset-0 transition-all duration-500" alt="거실">
+          <!-- [기본 첫화면은 수정한 iso_59.jpg가 뜨도록 세팅] -->
+          <div class="md:col-span-7 relative rounded-xl overflow-hidden shadow-lg min-h-[300px]">
+            <img id="c2-img" src="iso_59.jpg" class="w-full h-full object-cover absolute inset-0 transition-all duration-500" alt="인테리어 전경">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 p-5 flex flex-col justify-end text-white">
               <span class="text-xs text-orange-400 font-bold mb-1">e편한세상 실제 주택전시관 전경</span>
               <h3 id="c2-room-name" class="text-xl font-black">거실 (Living Room)</h3>
@@ -198,7 +186,6 @@ index.html
 
       </div>
     </section>
-
 
     <!-- ================= 6. 스마트 시스템 섹션 ================= -->
     <section class="bg-navy-dark text-white p-8 lg:p-16 text-center">
@@ -212,7 +199,6 @@ index.html
         <div class="p-4 bg-navy-deep rounded border border-white/5"><span class="text-xl block mb-1">⚡</span><h4 class="text-xs font-bold text-gold">에너지 절감</h4><p class="text-[9px] text-gray-500 mt-0.5">친환경 관리비 절감</p></div>
       </div>
     </section>
-
 
     <!-- ================= 7. 시세 비교 표 섹션 ================= -->
     <section class="p-8 lg:p-16 bg-white grid grid-cols-1 lg:grid-cols-12 gap-8 border-t border-gray-100">
@@ -236,14 +222,12 @@ index.html
       </div>
     </section>
 
-
     <!-- ================= 8. 하단 고정 플로팅 바 & 푸터 ================= -->
     <footer class="bg-navy-deep text-gray-500 p-8 text-center text-xs pb-32">
       <p class="font-bold text-gray-400 text-sm mb-2">e편한세상 부천 어반스퀘어 주택전시관 브리핑 서비스</p>
       <p class="max-w-2xl mx-auto leading-relaxed text-[11px]">본 페이지에 표기된 정보 및 사진 일러스트 등은 소비자의 이해를 돕기 위한 예시이며 실제 건축 인허가 과정에 따라 다소 변경될 수 있습니다.</p>
     </footer>
 
-    <!-- 하단 원본 전단지 스타일의 고정 바 (PC 확장 규격) -->
     <div class="fixed bottom-0 left-0 right-0 max-w-[1200px] mx-auto bg-navy-dark/95 backdrop-blur border-t border-white/10 p-4 z-50 flex space-x-4 shadow-2xl">
       <button onclick="openModal()" class="flex-1 bg-gold-gradient text-slate-950 font-black py-4 rounded text-sm lg:text-lg flex items-center justify-center space-x-2 shadow-lg">
         <span>📅</span> <span>모델하우스 방문예약 신청하기</span>
@@ -254,7 +238,6 @@ index.html
     </div>
 
   </div>
-
 
   <!-- 모달 팝업 창 -->
   <div id="popup-modal" class="fixed inset-0 bg-black/70 z-[100] hidden items-center justify-center p-4">
@@ -283,36 +266,33 @@ index.html
     </div>
   </div>
 
-
-  <!-- 인터랙티브 스위칭 스크립트 -->
   <script>
-    // 각 평형별 [아이소 도면 텍스트] 및 [인테리어 사진 매핑 데이터]
+    // 각 평형 선택 시 내 폴더에 저장된 실물 사진명으로 매핑 교체
     const c2Data = {
       '59': {
         title: '59㎡ A타입 평면 특화',
         desc: '3Bay 판상형 구조, 대형 팬트리 수납 극대화 설계 적용.',
         roomName: '거실 (Living Room)',
         roomDesc: '탁 트인 개방감과 고품격 아트월이 조화를 이룬 공간 설계',
-        imgUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80'
+        imgUrl: 'iso_59.jpg'
       },
       '74': {
         title: '74㎡ A타입 평면 특화',
         desc: '주방 동선을 컴팩트하게 조율하고 가변형 벽체 인테리어를 적용한 실속 평면.',
         roomName: '주방 & 다이닝 (Kitchen)',
         roomDesc: 'C2 HOUSE 특유의 대형 와이드 싱크볼과 주방 팬트리가 연동된 편리한 주방 공간',
-        imgUrl: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80'
+        imgUrl: 'iso_74.jpg'
       },
       '84': {
         title: '84㎡ A타입 평면 특화',
         desc: '완벽한 4Bay 맞통풍 설계, 안방 드레스룸 및 알파룸 추가 공간 제공.',
         roomName: '침실 (Master Bedroom)',
         roomDesc: '아늑함과 넉넉한 수납장, 붙박이 파우더룸 구조가 내장된 최상의 안방 인프라',
-        imgUrl: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80'
+        imgUrl: 'iso_84.jpg'
       }
     };
 
     function switchC2House(type) {
-      // 1. 모든 버튼 원상복구 및 선택된 버튼 활성화
       ['59', '74', '84'].forEach(t => {
         const btn = document.getElementById(`iso-btn-${t}`);
         const svg = document.getElementById(`svg-${t}`);
@@ -323,10 +303,8 @@ index.html
       const activeBtn = document.getElementById(`iso-btn-${type}`);
       activeBtn.className = "py-3 text-xs font-black rounded-lg border transition-all bg-navy-dark text-white border-navy-dark";
       
-      // 2. 해당하는 아이소메트릭 도면(SVG) 띄우기
       document.getElementById(`svg-${type}`).classList.remove('hidden');
 
-      // 3. 우측 이미지 슬라이더 사진 및 텍스트 교체 연동
       const data = c2Data[type];
       document.getElementById('c2-title').innerText = data.title;
       document.getElementById('c2-desc').innerText = data.desc;
