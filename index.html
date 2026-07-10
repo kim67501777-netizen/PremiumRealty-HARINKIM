@@ -5,7 +5,7 @@ index.html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>e편한세상 부천 어반스퀘어</title>
+<title>e편한세상 부천 어반스퀘어 | 프리미엄 안내</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
 
@@ -28,8 +28,6 @@ text-decoration:none;
 color:inherit;
 }
 
-
-/* 상단 */
 header{
 position:fixed;
 top:0;
@@ -39,7 +37,7 @@ padding:20px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.7);
+background:rgba(0,0,0,.75);
 z-index:100;
 }
 
@@ -55,7 +53,6 @@ font-size:14px;
 }
 
 
-/* 메인 */
 .hero{
 height:100vh;
 position:relative;
@@ -76,15 +73,13 @@ object-fit:cover;
 .overlay{
 position:absolute;
 inset:0;
-background:rgba(0,0,0,.5);
+background:rgba(0,0,0,.55);
 }
-
 
 .hero-text{
 position:relative;
 z-index:2;
 }
-
 
 .hero h3{
 color:#d4af37;
@@ -101,10 +96,9 @@ margin:25px 0;
 font-size:22px;
 }
 
-
 .btn{
 display:inline-block;
-margin:35px 8px 0;
+margin:30px 8px 0;
 padding:18px 40px;
 border-radius:50px;
 font-weight:bold;
@@ -120,7 +114,6 @@ border:1px solid #d4af37;
 }
 
 
-/* 공통 */
 .section{
 padding:100px 7%;
 }
@@ -142,10 +135,9 @@ margin:20px 0 40px;
 }
 
 
-/* 카드 */
 .cards{
 display:flex;
-gap:20px;
+gap:25px;
 }
 
 .card{
@@ -161,7 +153,15 @@ margin-bottom:15px;
 }
 
 
-/* 모바일 */
+.photo{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:20px;
+margin:30px 0;
+}
+
+
 @media(max-width:768px){
 
 .hero h1{
@@ -188,6 +188,10 @@ h2{
 font-size:32px;
 }
 
+.photo{
+height:280px;
+}
+
 }
 
 </style>
@@ -206,9 +210,9 @@ e편한세상
 <nav>
 <a href="#info">사업개요</a>
 <a href="#location">입지</a>
-<a href="#premium">호재</a>
+<a href="#premium">프리미엄</a>
 <a href="#price">시세</a>
-<a href="#contact">예약</a>
+<a href="#contact">상담</a>
 </nav>
 
 </header>
@@ -232,7 +236,7 @@ e편한세상<br>
 </h1>
 
 <p>
-부천의 중심에서 누리는<br>
+부천의 새로운 중심에서 누리는<br>
 프리미엄 라이프
 </p>
 
@@ -245,10 +249,11 @@ e편한세상<br>
 전화 상담
 </a>
 
-
 </div>
 
 </section>
+
+
 <section id="info" class="section">
 
 <div class="container">
@@ -258,10 +263,8 @@ PROJECT INFO
 </div>
 
 <h2>
-e편한세상 부천 어반스퀘어<br>
 사업 개요
 </h2>
-
 
 <div class="cards">
 
@@ -272,19 +275,17 @@ e편한세상 부천 어반스퀘어<br>
 </p>
 </div>
 
-
 <div class="card">
-<h3>단지 규모</h3>
+<h3>규모</h3>
 <p>
 랜드마크급 주거 단지
 </p>
 </div>
 
-
 <div class="card">
-<h3>입주 예정</h3>
+<h3>평형</h3>
 <p>
-새로운 미래 가치를 준비하는 공간
+실수요 선호 평형 구성
 </p>
 </div>
 
@@ -293,57 +294,6 @@ e편한세상 부천 어반스퀘어<br>
 </div>
 
 </section>
-
-
-
-<section class="section">
-
-<div class="container">
-
-<div class="title">
-TYPE PREMIUM
-</div>
-
-<h2>
-라이프스타일에 맞춘 다양한 평형
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-<h3>59㎡</h3>
-<p>
-실용적인 공간 구성과 효율적인 설계
-</p>
-</div>
-
-
-<div class="card">
-<h3>74㎡</h3>
-<p>
-가족 생활을 고려한 여유로운 공간
-</p>
-</div>
-
-
-<div class="card">
-<h3>84㎡</h3>
-<p>
-가장 선호도 높은 대표 평형
-</p>
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
 <section id="location" class="section">
 
 <div class="container">
@@ -353,72 +303,53 @@ LOCATION PREMIUM
 </div>
 
 <h2>
-부천 핵심 입지<br>
-교통과 생활을 모두 누리다
+교통과 생활을 모두 갖춘 핵심 입지
 </h2>
 
-
-<img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9"
-style="
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:20px;
-margin-bottom:30px;
-">
+<img class="photo"
+src="https://images.unsplash.com/photo-1444723121867-7a241cacace9">
 
 
 <div class="cards">
 
-
 <div class="card">
-
 <h3>
-역세권 입지
+🚉 역세권 프리미엄
 </h3>
-
 <p>
-편리한 교통 환경과 빠른 이동 동선
+주요 생활권으로 빠르게 연결되는
+편리한 교통 환경
 </p>
-
 </div>
-
 
 
 <div class="card">
-
 <h3>
-교육 인프라
+🏫 교육 인프라
 </h3>
-
 <p>
-안심할 수 있는 생활권과 교육 환경
+안심하고 누리는 생활권 중심의
+교육 환경
 </p>
-
 </div>
-
 
 
 <div class="card">
-
 <h3>
-생활 인프라
+🏢 생활 인프라
 </h3>
-
 <p>
-쇼핑·병원·편의시설을 가까이 누리는 생활
+쇼핑·의료·편의시설을 가까이
+누리는 주거 환경
 </p>
-
 </div>
 
 
 </div>
-
 
 </div>
 
 </section>
-
 
 
 
@@ -431,34 +362,64 @@ GREEN LIFE
 </div>
 
 <h2>
-자연과 함께하는 쾌적한 주거환경
+자연과 함께하는 쾌적한 주거 공간
 </h2>
 
 
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
-style="
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:20px;
-">
+<img class="photo"
+src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64">
 
 
-<p style="
-margin-top:30px;
-font-size:18px;
-line-height:1.8;
-">
+<div class="cards">
 
-주변 공원과 녹지 공간을 가까이 누리며
-쾌적하고 여유로운 생활을 제공합니다.
+<div class="card">
+<h3>
+공원 프리미엄
+</h3>
 
+<p>
+도심 속 쾌적함을 더하는
+녹지 공간과 여유로운 생활
 </p>
+
+</div>
+
+
+<div class="card">
+<h3>
+조경 특화
+</h3>
+
+<p>
+아름다운 외부 공간과
+품격 있는 단지 환경
+</p>
+
+</div>
+
+
+<div class="card">
+<h3>
+힐링 라이프
+</h3>
+
+<p>
+가족 모두가 편안한
+주거 만족도
+</p>
+
+</div>
 
 
 </div>
 
+</div>
+
 </section>
+
+
+
+
 <section id="premium" class="section">
 
 <div class="container">
@@ -468,9 +429,12 @@ PREMIUM VALUE
 </div>
 
 <h2>
-부천의 새로운 중심,
-미래 가치를 만나다
+e편한세상만의 특별한 가치
 </h2>
+
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
 
 
 <div class="cards">
@@ -479,11 +443,12 @@ PREMIUM VALUE
 <div class="card">
 
 <h3>
-브랜드 프리미엄
+브랜드 가치
 </h3>
 
 <p>
-대한민국 대표 주거 브랜드의 가치와 품격
+대한민국 대표 주거 브랜드가
+만드는 차별화된 가치
 </p>
 
 </div>
@@ -493,11 +458,12 @@ PREMIUM VALUE
 <div class="card">
 
 <h3>
-교통 중심 입지
+스마트 설계
 </h3>
 
 <p>
-주요 생활권으로 연결되는 편리한 이동성
+생활의 편리함과 안전을
+생각한 주거 시스템
 </p>
 
 </div>
@@ -507,11 +473,12 @@ PREMIUM VALUE
 <div class="card">
 
 <h3>
-개발 호재
+미래 가치
 </h3>
 
 <p>
-변화하는 부천의 미래 성장 가치
+부천의 변화와 함께 기대되는
+미래 주거 가치
 </p>
 
 </div>
@@ -522,7 +489,6 @@ PREMIUM VALUE
 </div>
 
 </section>
-
 
 
 
@@ -533,6 +499,7 @@ PREMIUM VALUE
 <div class="title">
 MARKET PRICE
 </div>
+
 
 <h2>
 주변 시세 비교
@@ -549,7 +516,7 @@ MARKET PRICE
 </h3>
 
 <p>
-부천 대표 브랜드 단지<br>
+주변 대표 브랜드 단지<br>
 시세 비교 자료
 </p>
 
@@ -564,7 +531,7 @@ MARKET PRICE
 
 <p>
 지역 대표 주거 단지<br>
-입지 가치 비교
+입지 비교
 </p>
 
 </div>
@@ -586,29 +553,28 @@ MARKET PRICE
 
 </div>
 
+
 </div>
 
 </section>
-
-
-
-
-<section id="contact" class="section"
-style="
+<section id="contact" class="section" style="
 background:#1a1a1a;
 text-align:center;
 ">
 
+<div class="container">
+
+<div class="title">
+CONTACT
+</div>
 
 <h2>
 모델하우스 방문예약
 </h2>
 
-
 <p>
 빠른 상담으로 자세한 안내를 받아보세요.
 </p>
-
 
 
 <a href="tel:01067501777"
@@ -619,12 +585,78 @@ class="btn gold">
 </a>
 
 
+</div>
+
+</section>
+
+
+
+<!-- 갤러리 -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="title">
+GALLERY
+</div>
+
+<h2>
+프리미엄 주거 이미지
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+
+<h3>
+고급 주거 공간
+</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea">
+
+<h3>
+감각적인 인테리어
+</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+
+<h3>
+프리미엄 라이프
+</h3>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
 
 
-<!-- 음악 -->
+<!-- 음악 버튼 -->
 
 <audio id="bgm" loop>
 
@@ -640,8 +672,8 @@ right:20px;
 bottom:90px;
 z-index:200;
 padding:12px 20px;
-border:none;
 border-radius:30px;
+border:none;
 background:#d4af37;
 font-weight:bold;
 ">
@@ -654,7 +686,6 @@ font-weight:bold;
 
 
 <!-- 하단 고정 버튼 -->
-
 
 <div style="
 position:fixed;
@@ -671,7 +702,7 @@ style="
 flex:1;
 padding:18px;
 background:#000;
-color:white;
+color:#fff;
 text-align:center;
 font-weight:bold;
 ">
@@ -702,8 +733,7 @@ font-weight:bold;
 
 
 
-<footer
-style="
+<footer style="
 padding:70px 20px 120px;
 background:#000;
 color:#999;
@@ -739,5 +769,7 @@ music.play();
 </script>
 
 
+
 </body>
+
 </html>
