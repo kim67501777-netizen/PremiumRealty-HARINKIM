@@ -671,3 +671,10 @@ display:none;
 
 
 }
+.premium-text{
+background:rgba(15,15,15,0.75)!important;
+padding:60px 90px!important;
+border-radius:30px!important;
+border:2px solid #c79d57!important;
+box-shadow:0 20px 50px rgba(0,0,0,.5)!important;
+}
