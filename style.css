@@ -643,7 +643,21 @@ z-index:9999;
 
 }
 
+.premium-text::before{
 
+content:"";
+
+position:absolute;
+
+inset:15px;
+
+border:1px solid rgba(215,177,111,.35);
+
+border-radius:22px;
+
+pointer-events:none;
+
+}
 
 .call{
 
