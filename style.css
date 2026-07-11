@@ -485,6 +485,70 @@ padding:30px;
 font-size:46px;
 
 }
+/* 프리미엄 배너 */
+
+.premium-banner{
+
+height:520px;
+
+background:url("이편한아파트조감도.png") center/cover no-repeat;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.premium-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+}
+
+
+.premium-text{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+.premium-text h3{
+
+color:#d7b16f;
+
+}
+
+
+.premium-text h2{
+
+font-size:48px;
+
+margin-bottom:25px;
+
+}
+
+
+.premium-text p{
+
+font-size:20px;
+
+}  
 
 
 
