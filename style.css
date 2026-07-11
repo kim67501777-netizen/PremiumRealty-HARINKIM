@@ -62,11 +62,11 @@ color:#c79d57;
 
 .call{
 
-background:#c79d57;
+background:#ff5a7a;
 
 color:#fff;
 
-padding:16px 32px;
+padding:15px 30px;
 
 border-radius:50px;
 
@@ -74,7 +74,7 @@ font-weight:800;
 
 font-size:16px;
 
-box-shadow:0 10px 25px rgba(199,157,87,.35);
+box-shadow:0 10px 25px rgba(255,90,122,.35);
 
 transition:.3s;
 
@@ -83,11 +83,13 @@ transition:.3s;
 
 .call:hover{
 
-background:#111;
+background:#e94365;
 
 transform:translateY(-3px);
 
 }
+
+
 
 .hero{
 
@@ -154,7 +156,6 @@ color:#d7b16f;
 }
 
 
-
 .hero p{
 
 font-size:22px;
@@ -164,7 +165,6 @@ margin-bottom:40px;
 }
 
 
-
 .hero-btn{
 
 display:flex;
@@ -172,7 +172,6 @@ display:flex;
 gap:15px;
 
 }
-
 
 
 .gold,
@@ -187,7 +186,6 @@ font-weight:700;
 }
 
 
-
 .gold{
 
 background:#c79d57;
@@ -195,7 +193,6 @@ background:#c79d57;
 color:white;
 
 }
-
 
 
 .white{
@@ -207,13 +204,11 @@ color:#222;
 }
 
 
-
 section{
 
-padding:120px 8%;
+padding:100px 8%;
 
 }
-
 
 
 h3{
@@ -229,7 +224,6 @@ margin-bottom:15px;
 }
 
 
-
 h2{
 
 font-size:46px;
@@ -242,7 +236,7 @@ margin-bottom:40px;
 
 
 
-
+/* 브랜드 / 사업개요 카드 */
 
 .brand-grid,
 .info-grid{
@@ -256,7 +250,6 @@ gap:25px;
 }
 
 
-
 .brand-grid div,
 .info-grid div{
 
@@ -268,9 +261,50 @@ border-radius:18px;
 
 text-align:center;
 
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
 }
 
 
+/* 브랜드 이미지 */
+
+.brand-image{
+
+margin:80px auto 60px;
+
+max-width:1100px;
+
+}
+
+
+.brand-image img{
+
+border-radius:20px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+/* 사업개요 이미지 */
+
+.overview-image{
+
+margin:40px auto;
+
+max-width:1100px;
+
+}
+
+
+.overview-image img{
+
+border-radius:20px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+/* 입지 / 이미지 영역 */
 
 .image-section{
 
@@ -285,7 +319,6 @@ align-items:center;
 }
 
 
-
 .image-section img{
 
 border-radius:20px;
@@ -296,214 +329,6 @@ box-shadow:0 20px 50px rgba(0,0,0,.15);
 
 
 
-
-.gallery-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-}
-
-
-
-.card{
-
-overflow:hidden;
-
-border-radius:20px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.1);
-
-background:white;
-
-}
-
-
-
-.card img{
-
-height:320px;
-
-object-fit:cover;
-
-}
-
-
-
-.card h4{
-
-padding:20px;
-
-text-align:center;
-
-font-size:22px;
-
-}
-
-
-
-.life{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:60px;
-
-align-items:center;
-
-background:#fafafa;
-
-}
-
-
-
-.life img,
-.system img{
-
-border-radius:20px;
-
-box-shadow:0 20px 40px rgba(0,0,0,.12);
-
-}
-
-
-
-
-.system{
-
-text-align:center;
-
-}
-
-
-
-.system-image{
-
-max-width:1000px;
-
-margin:auto;
-
-}
-
-
-
-
-.consult{
-
-background:#111;
-
-color:white;
-
-text-align:center;
-
-}
-
-
-
-.consult-btn{
-
-display:inline-block;
-
-margin-top:30px;
-
-padding:20px 60px;
-
-background:#c79d57;
-
-border-radius:50px;
-
-font-size:22px;
-
-font-weight:700;
-
-}
-
-
-
-
-footer{
-
-background:#000;
-
-color:#999;
-
-padding:40px 8%;
-
-text-align:center;
-
-font-size:14px;
-
-}
-
-
-
-.footer-logo{
-
-font-size:24px;
-
-color:white;
-
-font-weight:700;
-
-margin-bottom:15px;
-
-}
-
-
-
-.mobile-call{
-
-display:none;
-
-}
-
-
-
-
-@media(max-width:768px){
-
-
-header{
-
-height:70px;
-
-padding:0 20px;
-
-}
-
-
-nav{
-
-display:none;
-
-}
-
-
-.logo{
-
-font-size:16px;
-
-}
-
-
-
-.hero{
-
-padding:30px;
-
-}
-
-
-
-.hero h1{
-
-font-size:46px;
-
-}
 /* 프리미엄 배너 */
 
 .premium-banner{
@@ -538,11 +363,28 @@ background:rgba(0,0,0,.45);
 }
 
 
+
 .premium-text{
 
 position:relative;
 
 z-index:2;
+
+background:rgba(20,20,20,.65);
+
+padding:35px 55px;
+
+border-radius:22px;
+
+border:1px solid rgba(215,177,111,.9);
+
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+display:inline-block;
+
+max-width:750px;
+
+backdrop-filter:blur(10px);
 
 }
 
@@ -567,7 +409,240 @@ margin-bottom:25px;
 
 font-size:20px;
 
-}  
+}
+
+
+
+/* 단지 갤러리 */
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.card{
+
+overflow:hidden;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+background:white;
+
+}
+
+
+
+.card img{
+
+height:320px;
+
+object-fit:cover;
+
+transition:.4s;
+
+}
+
+
+.card:hover img{
+
+transform:scale(1.05);
+
+}
+
+
+.card h4{
+
+padding:20px;
+
+text-align:center;
+
+font-size:22px;
+
+}
+
+
+
+/* 라이프스타일 */
+
+.life{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+background:#fafafa;
+
+}
+
+
+
+.life img,
+.system img{
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+/* 스마트 시스템 */
+
+.system{
+
+text-align:center;
+
+}
+
+
+
+.system-image{
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+
+
+/* 상담 영역 */
+
+.consult{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+
+.consult-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:20px 60px;
+
+background:#c79d57;
+
+border-radius:50px;
+
+font-size:22px;
+
+font-weight:700;
+
+}
+
+
+
+/* footer */
+
+footer{
+
+background:#000;
+
+color:#999;
+
+padding:40px 8%;
+
+text-align:center;
+
+font-size:14px;
+
+}
+
+
+.footer-logo{
+
+font-size:24px;
+
+color:white;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+
+
+.mobile-call{
+
+display:none;
+
+}
+
+
+
+/* 모바일 */
+
+@media(max-width:768px){
+
+
+header{
+
+height:70px;
+
+padding:0 20px;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+.logo{
+
+font-size:16px;
+
+}
+
+
+
+.call{
+
+display:none;
+
+}
+
+
+
+.hero{
+
+padding:30px;
+
+}
+
+
+
+.hero h1{
+
+font-size:46px;
+
+}
 
 
 
@@ -615,6 +690,38 @@ margin-bottom:25px;
 
 
 
+.premium-banner{
+
+height:420px;
+
+}
+
+
+
+.premium-text{
+
+padding:30px 25px;
+
+}
+
+
+
+.premium-text h2{
+
+font-size:30px;
+
+}
+
+
+
+.premium-text p{
+
+font-size:16px;
+
+}
+
+
+
 .mobile-call{
 
 display:block;
@@ -627,7 +734,7 @@ left:20px;
 
 right:20px;
 
-background:#c79d57;
+background:#ff5a7a;
 
 color:white;
 
@@ -643,38 +750,5 @@ z-index:9999;
 
 }
 
-.premium-text{
 
-position:relative;
-
-z-index:2;
-
-background:rgba(20,20,20,.65);
-
-padding:55px 80px;
-
-border-radius:30px;
-
-border:1px solid rgba(215,177,111,.9);
-
-box-shadow:
-0 20px 60px rgba(0,0,0,.45);
-
-backdrop-filter:blur(10px);
-
-}
-.call{
-
-display:none;
-
-}
-
-
-}
-.premium-text{
-background:rgba(15,15,15,0.75)!important;
-padding:60px 90px!important;
-border-radius:30px!important;
-border:2px solid #c79d57!important;
-box-shadow:0 20px 50px rgba(0,0,0,.5)!important;
 }
