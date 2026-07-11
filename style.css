@@ -643,22 +643,26 @@ z-index:9999;
 
 }
 
-.premium-text::before{
+.premium-text{
 
-content:"";
+position:relative;
 
-position:absolute;
+z-index:2;
 
-inset:15px;
+background:rgba(20,20,20,.65);
 
-border:1px solid rgba(215,177,111,.35);
+padding:55px 80px;
 
-border-radius:22px;
+border-radius:30px;
 
-pointer-events:none;
+border:1px solid rgba(215,177,111,.9);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45);
+
+backdrop-filter:blur(10px);
 
 }
-
 .call{
 
 display:none;
