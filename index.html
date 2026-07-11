@@ -1,4 +1,3 @@
-index.html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,461 +5,17 @@ index.html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>e편한세상 부천 어반스퀘어</title>
+
 <meta property="og:title" content="e편한세상 부천 어반스퀘어">
-<meta property="og:description" content="프리미엄 주거공간 e편한세상 부천 어반스퀘어 모델하우스 안내">
-<meta property="og:image" content="https://kim67501777-netizen.github.io/PremiumRealty-HARINKIM/KakaoTalk_20260711_041705053.jpg">
-<meta property="og:url" content="https://kim67501777-netizen.github.io/PremiumRealty-HARINKIM/">
-<meta property="og:type" content="website">  
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Noto Sans KR',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-color:#222;
-background:#fff;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:82px;
-background:rgba(255,255,255,.95);
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 6%;
-z-index:1000;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
-}
-
-.logo{
-font-size:22px;
-font-weight:900;
-}
-
-nav{
-display:flex;
-gap:35px;
-}
-
-.call{
-background:#111;
-color:#fff;
-padding:14px 28px;
-border-radius:30px;
-font-weight:bold;
-}
-
-
-/* 메인 */
-
-.hero{
-
-height:100vh;
-min-height:750px;
-
-background:
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.65)
-),
-url("./KakaoTalk_20260711_041705053.jpg?v=2")
-center/cover;
-
-display:flex;
-align-items:center;
-padding:8%;
-color:white;
-
-}
-
-
-.hero h1{
-
-font-size:72px;
-line-height:1.15;
-letter-spacing:-4px;
-
-}
-
-.hero span{
-
-color:#d5ad68;
-
-}
-
-
-.hero h2{
-
-font-size:32px;
-margin-top:30px;
-
-}
-
-
-.hero p{
-
-font-size:20px;
-line-height:1.8;
-margin-top:20px;
-
-}
-
-
-.btn{
-
-display:inline-block;
-margin-top:40px;
-padding:18px 40px;
-background:#c49a55;
-color:#fff;
-border-radius:5px;
-font-weight:bold;
-
-}
-
-
-section{
-
-padding:120px 8%;
-
-}
-
-
-h3{
-
-color:#b18a4a;
-letter-spacing:3px;
-font-size:15px;
-
-}
-
-
-h2{
-
-font-size:42px;
-line-height:1.4;
-margin:20px 0 40px;
-
-}
-
-
-.box{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-
-}
-
-
-.box div{
-
-padding:45px 20px;
-background:#f7f3ec;
-text-align:center;
-font-weight:bold;
-
-}
-
-
-.info{
-
-background:#fafafa;
-text-align:center;
-
-}
-
-
-/* 입지 지도 */
-
-.location{
-
-display:flex;
-align-items:center;
-gap:60px;
-
-}
-
-
-.location div{
-
-flex:1;
-
-}
-
-
-.location img{
-
-width:50%;
-border-radius:15px;
-
-}
-
-
-/* 지하철 */
-
-.metro{
-
-display:flex;
-align-items:center;
-gap:60px;
-background:#f7f7f7;
-
-}
-
-
-.metro div{
-
-flex:1;
-
-}
-
-
-.metro img{
-
-width:50%;
-border-radius:15px;
-
-}
-.iso-wrap h2{
-margin-bottom:40px;
-}
-
-
-.iso{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-
-}
-
-
-.iso img{
-
-width:100%;
-border-radius:15px;
-
-}
-
-
-/* 조경 */
-
-.park img{
-
-width:100%;
-border-radius:20px;
-
-}
-
-
-/* 가치 */
-
-.price{
-
-background:#111;
-color:white;
-text-align:center;
-
-}
-
-
-.price .box div{
-
-background:none;
-border:1px solid #777;
-
-}
-
-
-/* C2 HOUSE */
-
-.house{
-
-text-align:center;
-
-}
-
-
-.house img{
-
-width:32%;
-height:320px;
-object-fit:cover;
-border-radius:15px;
-
-}
-
-
-/* 시스템 */
-
-.system{
-
-text-align:center;
-
-}
-
-
-footer{
-
-background:#000;
-color:#aaa;
-padding:35px;
-text-align:center;
-
-}
-
-
-.mobile{
-
-display:none;
-
-}
-
-
-
-@media(max-width:768px){
-
-header{
-
-height:70px;
-padding:0 20px;
-
-}
-
-
-nav{
-
-display:none;
-
-}
-
-
-.logo{
-
-font-size:15px;
-
-}
-
-
-.hero{
-
-padding:25px;
-
-}
-
-
-.hero h1{
-
-font-size:45px;
-
-}
-
-
-.hero h2{
-
-font-size:23px;
-
-}
-
-
-section{
-
-padding:80px 25px;
-
-}
-
-
-h2{
-
-font-size:30px;
-
-}
-
-
-.box{
-
-grid-template-columns:1fr;
-
-}
-
-
-.location,
-.metro{
-
-display:block;
-
-}
-
-
-.location img,
-.metro img{
-
-width:100%;
-margin-top:30px;
-
-}
-
-
-.iso{
-
-grid-template-columns:1fr;
-
-}
-
-
-.house img{
-
-width:100%;
-margin-bottom:15px;
-
-}
-
-
-.mobile{
-
-display:block;
-position:fixed;
-bottom:20px;
-left:20px;
-right:20px;
-background:#c49a55;
-color:white;
-padding:16px;
-text-align:center;
-border-radius:40px;
-z-index:999;
-
-}
-
-}
-
-</style>
+<meta property="og:description" content="프리미엄 주거공간 e편한세상 부천 어반스퀘어">
+<meta property="og:image" content="이편한메인.png">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -468,19 +23,18 @@ z-index:999;
 e편한세상 부천 어반스퀘어
 </div>
 
-
 <nav>
-
 <a href="#brand">브랜드</a>
+<a href="#overview">사업개요</a>
 <a href="#location">입지</a>
-<a href="#iso">단지</a>
-<a href="#house">C2 HOUSE</a>
-
+<a href="#transport">교통</a>
+<a href="#complex">단지</a>
+<a href="#community">커뮤니티</a>
+<a href="#system">스마트</a>
 </nav>
 
-
-<a class="call" href="tel:01067501777">
-☎ 상담전화
+<a href="tel:01067501777" class="call">
+☎ 상담문의
 </a>
 
 </header>
@@ -488,248 +42,297 @@ e편한세상 부천 어반스퀘어
 
 <section class="hero">
 
-<div>
+<div class="overlay"></div>
+
+<div class="hero-text">
 
 <h1>
 e편한세상<br>
 <span>부천 어반스퀘어</span>
 </h1>
 
-
-<h2>
-새로운 프리미엄 라이프의 시작
-</h2>
-
-
 <p>
-도심의 편리함과 자연의 여유를<br>
-모두 누리는 새로운 주거공간
+새로운 프리미엄 라이프의 시작<br>
+DL이앤씨 브랜드 아파트
 </p>
 
 
-<a class="btn" href="tel:01067501777">
-☎ 모델하우스 전화상담
+<div class="hero-btn">
+
+<a href="tel:01067501777" class="gold">
+모델하우스 상담
 </a>
 
+<a href="#overview" class="white">
+사업개요
+</a>
+
+</div>
 
 </div>
 
 </section>
+
 
 
 <section id="brand">
 
-<h3>
-BRAND PREMIUM
-</h3>
+<h3>BRAND</h3>
 
 <h2>
 대한민국 대표 브랜드<br>
-e편한세상의 가치
-</h2>
-
-
-<div class="box">
-
-<div>브랜드 파워</div>
-<div>차별화 설계</div>
-<div>프리미엄 커뮤니티</div>
-<div>스마트 라이프</div>
-
-</div>
-
-</section>
-
-
-<section class="info">
-
-<h3>
-PREMIUM INFO
-</h3>
-
-<h2>
-한눈에 보는 단지 정보
-</h2>
-
-
-<div class="box">
-
-<div>
-총 세대수<br><br>
-1,000세대 이상
-</div>
-
-<div>
-주택형<br><br>
-59㎡~84㎡
-</div>
-
-<div>
-입지<br><br>
-부천 핵심 생활권
-</div>
-
-<div>
-브랜드<br><br>
 e편한세상
+</h2>
+
+
+<div class="brand-grid">
+
+<div>
+<h4>Brand Power</h4>
+<p>대한민국 대표 브랜드</p>
+</div>
+
+<div>
+<h4>Premium</h4>
+<p>차별화된 특화설계</p>
+</div>
+
+<div>
+<h4>Community</h4>
+<p>고품격 커뮤니티</p>
+</div>
+
+<div>
+<h4>Smart</h4>
+<p>스마트 라이프</p>
 </div>
 
 </div>
 
 </section>
-<section id="location" class="location">
 
-<div>
 
-<h3>
-PREMIUM LOCATION
-</h3>
+
+
+<section id="overview">
+
+<h3>PROJECT</h3>
 
 <h2>
-더블 역세권의 가치
+사업개요
+</h2>
+
+
+<div class="info-grid">
+
+<div>
+<strong>브랜드</strong>
+<span>e편한세상</span>
+</div>
+
+
+<div>
+<strong>위치</strong>
+<span>부천 핵심생활권</span>
+</div>
+
+
+<div>
+<strong>주택형</strong>
+<span>59㎡~84㎡</span>
+</div>
+
+
+<div>
+<strong>규모</strong>
+<span>대단지 프리미엄</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="location" class="image-section">
+
+
+<div class="text">
+
+<h3>LOCATION</h3>
+
+<h2>
+프리미엄 입지환경
 </h2>
 
 <p>
 7호선 부천종합운동장역<br>
 서해선 원종역<br>
-서울 접근성을 높이는 교통망
+서울 접근성이 우수한 교통환경
 </p>
 
 </div>
 
 
-<img src="./KakaoTalk_20260711_014031214_04.jpg">
+
+<div class="photo">
+
+<img src="이편한지도.png">
+
+</div>
+
 
 </section>
 
 
-<section class="metro">
 
-<div>
 
-<h3>
-TRANSPORTATION
-</h3>
+
+
+<section id="transport" class="image-section reverse">
+
+
+<div class="photo">
+
+<img src="이편한지하철.png">
+
+</div>
+
+
+
+<div class="text">
+
+<h3>TRANSPORT</h3>
 
 <h2>
-가까운 역세권 생활
+편리한 교통환경
 </h2>
 
 <p>
-빠른 이동과 편리한 교통환경<br>
-미래가치를 높이는 입지
+서울·인천 접근성 향상<br>
+광역교통망 중심 프리미엄 입지
 </p>
 
 </div>
 
-<img src="./KakaoTalk_20260711_014244476.jpg">
 
 </section>
 
 
 
-<section id="iso" class="iso-wrap">
 
-<h3>
-PARK LIFE
-</h3>
+
+<section id="complex" class="gallery-section">
+
+
+<div class="title">
+
+<h3>MASTER PLAN</h3>
 
 <h2>
 프리미엄 단지 설계
 </h2>
 
-
-<div class="iso">
-
-<img src="./KakaoTalk_20260711_014031214.jpg">
-
-<img src="./KakaoTalk_20260711_014031214_01.jpg">
-
-<img src="./KakaoTalk_20260711_014031214_02.jpg">
+<p>
+쾌적한 조경과 차별화된 설계로 완성되는
+e편한세상 부천 어반스퀘어
+</p>
 
 </div>
+
+
+
+
+<div class="gallery-grid">
+
+
+<div class="card">
+
+<img src="이편한아파트조감도.png">
+
+<h4>
+단지 조감도
+</h4>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="이편한조경.png">
+
+<h4>
+프리미엄 조경
+</h4>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="이편한커뮤니트시설.png">
+
+<h4>
+커뮤니티 시설
+</h4>
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
-<section class="park">
-
-<h3>
-GREEN PARK
-</h3>
-
-<h2>
-자연과 함께하는 조경 공간
-</h2>
 
 
-<img src="./KakaoTalk_20260711_014031214_03.jpg">
+<section class="life">
 
 
-</section>
+<div class="life-left">
 
 
-
-<section class="price">
-
-<h3>
-REAL ESTATE VALUE
-</h3>
-
-
-<h2>
-미래 가치와 생활 가치
-</h2>
-
-
-<div class="box">
-
-<div>
-주변 시세 가치
-</div>
-
-
-<div>
-생활 인프라
-</div>
-
-
-<div>
-교통 개발 가치
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="house" class="house">
-
-<h3>
-C2 HOUSE
-</h3>
+<h3>LIFESTYLE</h3>
 
 
 <h2>
-라이프스타일을 완성하는 공간
+라이프스타일 공간
 </h2>
 
 
-<img src="./KakaoTalk_20260711_014031214.jpg">
+<p>
+가족 모두가 만족하는
+프리미엄 주거공간
+</p>
 
-<img src="./KakaoTalk_20260711_014031214_01.jpg">
 
-<img src="./KakaoTalk_20260711_014031214_02.jpg">
+</div>
+
+
+
+<div class="life-right">
+
+<img src="이편한라이프스타일공간.png">
+
+</div>
 
 
 </section>
 
 
 
-<section class="system">
+
+
+
+<section id="system" class="system">
+
 
 <h3>
 SMART SYSTEM
@@ -741,28 +344,9 @@ SMART SYSTEM
 </h2>
 
 
-<div class="box">
+<div class="system-image">
 
-
-<div>
-스마트 홈
-</div>
-
-
-<div>
-무인택배
-</div>
-
-
-<div>
-보안 시스템
-</div>
-
-
-<div>
-에너지 절감
-</div>
-
+<img src="스마트한시스템.png">
 
 </div>
 
@@ -771,19 +355,65 @@ SMART SYSTEM
 
 
 
+
+
+<section class="consult">
+
+
+<h2>
+모델하우스 방문예약
+</h2>
+
+
+<p>
+분양가 · 잔여세대 · 방문예약<br>
+전문 상담 진행
+</p>
+
+
+
+<a href="tel:01067501777" class="consult-btn">
+
+☎ 상담 연결
+
+</a>
+
+
+</section>
+
+
+
+
+
 <footer>
 
+
+<div class="footer-logo">
+
 e편한세상 부천 어반스퀘어
+
+</div>
+
+
+<p>
+본 홈페이지의 CG 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.
+</p>
+
 
 </footer>
 
 
 
-<a class="mobile" href="tel:01067501777">
+
+<a href="tel:01067501777" class="mobile-call">
 
 ☎ 전화상담
 
 </a>
+
+
+
+<script src="script.js"></script>
 
 
 </body>
